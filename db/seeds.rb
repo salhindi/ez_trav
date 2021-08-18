@@ -10,3 +10,4 @@ paris = Destination.create(city: "Paris", country: "France", description: "warm"
 new_york = Destination.create(city: "New York City", country: "USA", description: "cold", image: "n/a"
 machu_picchu = Destination.create(city: "Machu Picchu", country: "Peru", description: "warm", image: "n/a"
     
+family_summer = TravelPlan.create(name: "FamilySummer", start_date: 2021-12-12, end_date: 2022-01-01, destination_id: paris.id)
