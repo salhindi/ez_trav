@@ -2,7 +2,7 @@ class Api::V1::TravelPlansController < ApplicationController
 
     def index
         travel_plans = TravelPlan.all
-        render json: travel_plans
+        render json: TravelPlanSerializer.new(travel_plans)
     end
 
     def create
